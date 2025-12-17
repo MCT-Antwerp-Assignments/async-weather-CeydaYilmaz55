@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkySnap</title>
+  </head>
+
+  <body>
+    <div class="app">
+      <h1 class="app__title">🌦️ SkySnap</h1>
+
+      <form class="weather__form" id="cityForm">
+        <div class="weather__field">
+          <label class="weather__label" for="city">Stad</label>
+          <input class="weather__input" id="city" placeholder="Antwerpen" />
+        </div>
+
+        <div class="weather__field">
+          <label class="weather__label" for="country">Land</label>
+          <input class="weather__input" id="country" placeholder="BE" />
+        </div>
+
+        <button class="weather__button" type="submit">Zoek weer</button>
+
+        <div class="weather__field">
+          <label class="weather__label" for="lat">Latitude</label>
+          <input class="weather__input" id="lat" type="number" step="0.0001" />
+        </div>
+
+        <div class="weather__field">
+          <label class="weather__label" for="lng">Longitude</label>
+          <input class="weather__input" id="lng" type="number" step="0.0001" />
+        </div>
+
+        <button class="weather__button" type="button" id="coordsBtn">
+          Gebruik coördinaten
+        </button>
+      </form>
+
+      <section class="weather" aria-live="polite">
+        <p class="weather__location">
+          <span>📍</span>
+          <span id="place">Antwerpen, België</span>
+        </p>
+
+        <p class="weather__temp" id="temp">-- °C</p>
+        <p class="weather__feels" id="feels">Voelt als: -- °C</p>
+        <p class="weather__status" id="rain">--</p>
+        <p class="weather__error" id="error"></p>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
