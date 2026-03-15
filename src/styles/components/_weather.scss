@@ -1,0 +1,74 @@
+.weather {
+  border-radius: 18px;
+  padding: 16px;
+
+  
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  &__field {
+    display: grid;
+    gap: 6px;
+  }
+
+  &__label {
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+
+  &__input {
+    padding: 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: #fff;
+    outline: none;
+  }
+
+  &__input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__button {
+    grid-column: 1 / -1;
+    padding: 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin: 0 0 10px 0;
+  }
+
+  &__temp {
+    font-size: 44px;
+    margin: 6px 0 10px 0;
+    letter-spacing: -0.02em;
+  }
+
+  &__status {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  &__error {
+    margin-top: 10px;
+    color: #ffd1d1;
+  }
+}
